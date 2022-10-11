@@ -8,13 +8,30 @@
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(11fr);
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo recursos recursos recomendados recomendados alumnos alumnos"
+    ;
     background-color: rgba(0, 0, 0, 0.096);
 }
-
+.titulo{
+    grid-area: titulo;
+    margin: 15px;
+}
+.alumnos{
+    grid-area: alumnos;
+    margin: 15px;
+}
+.recomendados{
+    grid-area: recomendados;
+    margin: 15px;
+}
+.recursos{
+    grid-area: recursos;
+    margin: 15px;
+}
 .navegacion {
     display: flex;
     flex-direction: row;
@@ -48,7 +65,6 @@
 }
 .somos {
     grid-area: somos;
-    background-color: rgba(160, 160, 160, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,16 +77,17 @@
     align-items: center;
     border: solid 3px black;
     margin: 25px;
+    text-align:center;
 }
 .objetivos {
     grid-area: objetivos;
-    background-color: blue;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align:center;
 }
 .lorem2{
     display: flex;
