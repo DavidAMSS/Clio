@@ -16,6 +16,7 @@
         "titulo titulo titulo titulo titulo recursos recursos recomendados recomendados alumnos alumnos";
 
     background-color: rgba(214, 195, 164, 0.747);
+    color: #003B4A;
 }
 
 .titulonav {
@@ -74,7 +75,6 @@
     ;
     font-family: 'Raleway', sans-serif;
 }
-
 .objetivos {
     grid-area: objetivos;
     display: flex;
@@ -156,33 +156,49 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-        "videos videos videos maps maps"
-        "videos videos videos maps maps"
-        "videos videos videos maps maps"
-        "videos videos videos maps maps"
+        "videos videos videos map map"
+        "videos videos videos map map"
+        "videos videos videos map map"
+        "videos videos videos map map"
         "imagenesa imagenesa imagenesa imagenesa imagenesa"
         "imagenesa imagenesa imagenesa imagenesa imagenesa"
     ;
 }
-
+.vtitulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(214, 195, 164, 0.745);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(214, 195, 164, 0.233);
+    box-shadow: inset;
+    text-align: center;
+    margin:  5px;
+    color: #003B4A;
+    width: 240px;
+    height: 45px;
+}
 .videos {
     grid-area: videos;
-    display: flex;
-    justify-content: space-around;
+    display: column;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 15px;
 }
 
-.rtitulo {
-    border-color: #aaaaaa;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    text-align: center;
-}
+
 .map{
     grid-area: map;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 .imagenesa {
     grid-area: imagenesa;
@@ -229,5 +245,20 @@
             "objetivos objetvios"
             "galeria galeria"
             "galeria galeria"
+    }
+    .maina {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "videos videos"
+            "videos videos"
+            "videos videos"
+            "videos videos"
+            "map map"
+            "map map"
+            "imagenesa imagenesa"
+            "imagenesa imagenesa"
+        ;
     }
 }
