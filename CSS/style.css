@@ -11,9 +11,9 @@
 .header {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-columns: repeat(11fr);
+    grid-template-columns: repeat(13fr);
     grid-template-areas:
-        "titulo titulo titulo titulo titulo recursos recursos recomendados recomendados alumnos alumnos";
+        "titulo titulo titulo titulo titulo home home recursos recursos recomendados recomendados alumnos alumnos";
 
     background-color: rgba(214, 195, 164, 0.747);
     color: #003B4A;
@@ -21,6 +21,13 @@
 
 .titulonav {
     grid-area: titulo;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    grid-area: home;
     margin: 15px;
     align-items: center;
     justify-content: center;
@@ -75,6 +82,7 @@
     ;
     font-family: 'Raleway', sans-serif;
 }
+
 .objetivos {
     grid-area: objetivos;
     display: flex;
@@ -120,7 +128,6 @@
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
     text-align: center;
     transition: all 0.25s;
 }
@@ -149,23 +156,32 @@
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
+    text-align: center;
+    text-justify: distribute;
+    width: 240px;
+    height: 60px;
 }
 
 .maina {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
-        "videos videos videos map map"
-        "videos videos videos map map"
-        "videos videos videos map map"
-        "videos videos videos map map"
-        "imagenesa imagenesa imagenesa imagenesa imagenesa"
-        "imagenesa imagenesa imagenesa imagenesa imagenesa"
+        "vtitulos vtitulos mtitulos mtitulos"
+        "videos videos map map"
+        "videos videos map map"
+        "videos videos map map"
+        "videos videos map map"
+        "videos videos map map"
+        "videos videos  map map"
     ;
+    margin: 15px;
 }
-.vtitulo {
+
+.vtitulos {
+    grid-area: vtitulos;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -174,25 +190,43 @@
     border-style: solid;
     border-radius: 5px;
     background-color: rgba(214, 195, 164, 0.233);
-    box-shadow: inset;
     text-align: center;
-    margin:  5px;
     color: #003B4A;
     width: 240px;
     height: 45px;
-}
-.videos {
-    grid-area: videos;
-    display: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
     margin: 15px;
 }
 
+.mtitulos {
+    grid-area: mtitulos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(214, 195, 164, 0.745);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(214, 195, 164, 0.233);
+    text-align: center;
+    color: #003B4A;
+    width: 240px;
+    height: 45px;
+    margin: 15 px;
+}
 
-.map{
+.videos {
+    grid-area: videos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin: 5px;
+}
+
+.map {
     grid-area: map;
     display: flex;
     flex-wrap: wrap;
@@ -200,6 +234,7 @@
     align-items: center;
     justify-content: space-around;
 }
+
 .imagenesa {
     grid-area: imagenesa;
 }
@@ -221,10 +256,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
+            "vtitulos vtitulos"
             "videos videos"
             "videos videos"
             "videos videos"
             "videos videos"
+            "mtitulos mtitulos"
             "map map"
             "map map"
             "imagenesa imagenesa"
@@ -246,15 +283,18 @@
             "galeria galeria"
             "galeria galeria"
     }
+
     .maina {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         grid-template-areas:
+            "vtitulos vtitulos"
             "videos videos"
             "videos videos"
             "videos videos"
             "videos videos"
+            "mtitulos mtitulos"
             "map map"
             "map map"
             "imagenesa imagenesa"
