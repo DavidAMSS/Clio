@@ -113,7 +113,6 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
     height: 430px;
     display: flex;
     flex-wrap: wrap;
@@ -164,36 +163,12 @@
 
 .maina {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "vtitulos vtitulos mtitulos mtitulos"
-        "videos videos map map"
-        "videos videos map map"
-        "videos videos map map"
-        "videos videos map map"
-        "videos videos map map"
-        "videos videos  map map"
+        "videos videos videos videos videos videos"
+        "map map map map map map"
     ;
-    margin: 15px;
-}
-
-.vtitulos {
-    grid-area: vtitulos;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-color: rgba(214, 195, 164, 0.745);
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    background-color: rgba(214, 195, 164, 0.233);
-    text-align: center;
-    color: #003B4A;
-    width: 240px;
-    height: 45px;
     margin: 15px;
 }
 
@@ -222,8 +197,25 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:flex-start;
-    margin: 5px;
+    align-items:center;
+    margin: 25px;
+}
+.vtitulos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    border-color: rgba(214, 195, 164, 0.745);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(214, 195, 164, 0.233);
+    text-align: center;
+    color: #003B4A;
+    width: 240px;
+    height: 45px;
+    margin: 15px;
 }
 
 .map {
@@ -238,7 +230,10 @@
 .imagenesa {
     grid-area: imagenesa;
 }
-
+.footer{
+    width: 100%;
+    height: 5%;
+}
 /**tablet**/
 @media (max-width:768px) {
     .main {
