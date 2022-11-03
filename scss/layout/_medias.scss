@@ -1,0 +1,62 @@
+@media (max-width:768px) {
+    .maini {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "titulo titulo titulo"
+            "objetivo objetivos"
+            "objetivos objetvios"
+            "objetivos objetvios"
+    }
+
+    .maina {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "vtitulos vtitulos"
+            "videos videos"
+            "videos videos"
+            "videos videos"
+            "videos videos"
+            "mtitulos mtitulos"
+            "map map"
+            "map map"
+            "imagenesa imagenesa"
+            "imagenesa imagenesa"
+        ;
+    }
+}
+
+/**mobile**/
+@media (max-width:576px) {
+    .maini {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "somos somos"
+            "somos somos"
+            "objetivo objetivos"
+            "objetivos objetvios"
+            "galeria galeria"
+            "galeria galeria"
+    }
+
+    .maina {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+            "vtitulos vtitulos"
+            "videos videos"
+            "videos videos"
+            "videos videos"
+            "videos videos"
+            "mtitulos mtitulos"
+            "map map"
+            "map map"
+            "imagenesa imagenesa"
+            "imagenesa imagenesa"
+        ;
+    }
+}

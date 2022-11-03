@@ -1,0 +1,50 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(13fr);
+    grid-template-areas:
+        "titulo titulo titulo titulo titulo home home recursos recursos recomendados recomendados alumnos alumnos";
+
+    background-color: rgba(214, 195, 164, 0.747);
+    color: #003B4A;
+}
+
+.titulonav {
+    grid-area: titulo;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.home {
+    grid-area: home;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.alumnos {
+    grid-area: alumnos;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.recomendados {
+    grid-area: recomendados;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.recursos {
+    grid-area: recursos;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nolista {
+    list-style-type: none;
+}

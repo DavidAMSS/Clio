@@ -1,299 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-
-/**Desktop**/
-.raleway {
-    font-family: 'Raleway', sans-serif;
-}
+  margin: 0;
+  padding: 0; }
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: repeat(13fr);
-    grid-template-areas:
-        "titulo titulo titulo titulo titulo home home recursos recursos recomendados recomendados alumnos alumnos";
-
-    background-color: rgba(214, 195, 164, 0.747);
-    color: #003B4A;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(13fr);
+  grid-template-areas: "titulo titulo titulo titulo titulo home home recursos recursos recomendados recomendados alumnos alumnos";
+  background-color: rgba(214, 195, 164, 0.747);
+  color: #003B4A; }
 
 .titulonav {
-    grid-area: titulo;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
-}
+  grid-area: titulo;
+  margin: 15px;
+  align-items: center;
+  justify-content: center; }
 
 .home {
-    grid-area: home;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
-}
+  grid-area: home;
+  margin: 15px;
+  align-items: center;
+  justify-content: center; }
 
 .alumnos {
-    grid-area: alumnos;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
-}
+  grid-area: alumnos;
+  margin: 15px;
+  align-items: center;
+  justify-content: center; }
 
 .recomendados {
-    grid-area: recomendados;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
-}
+  grid-area: recomendados;
+  margin: 15px;
+  align-items: center;
+  justify-content: center; }
 
 .recursos {
-    grid-area: recursos;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
-}
+  grid-area: recursos;
+  margin: 15px;
+  align-items: center;
+  justify-content: center; }
 
 .navegacion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.margenes15 {
-    margin-left: 15px;
-    margin-right: 15px;
-}
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; }
 
 .nolista {
-    list-style-type: none;
-}
+  list-style-type: none; }
 
 .maini {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-        "titulo titulo titulo titulo"
-        "objetivos objetivos objetivos objetivos"
-        "objetivos objetivos objetivos objetivos"
-        "objetivos objetivos objetivos objetivos"
-    ;
-    font-family: 'Raleway', sans-serif;
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "titulo titulo titulo titulo" "objetivos objetivos objetivos" "objetivos objetivos objetivos";
+  font-family: 'Raleway', sans-serif; }
 
 .objetivos {
-    grid-area: objetivos;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-}
+  grid-area: objetivos;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline; }
 
 .titulo {
-    grid-area: titulo;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.contacto {
-    grid-area: contacto;
-    background-color: brown;
-}
-
-.card {
-    width: 100%;
-    height: 100%;
-    font-family: 'Raleway', sans-serif;
-}
-
-.container {
-    width: 100%;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: auto;
-}
-
-.container .card {
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.25s;
-}
-
-.container .card:hover {
-    transform: translate(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.container .card img {
-    width: 330px;
-    height: 220px;
-}
-
-.container .card h4 {
-    font-weight: 600;
-}
-
-.container .card p {
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.container .card a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #3498db;
-    text-align: center;
-    text-justify: distribute;
-    width: 240px;
-    height: 60px;
-}
+  grid-area: titulo;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
 .maina {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "videos videos videos videos videos videos"
-        "map map map map map map"
-    ;
-    margin: 15px;
-}
-
-.mtitulos {
-    grid-area: mtitulos;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-color: rgba(214, 195, 164, 0.745);
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    background-color: rgba(214, 195, 164, 0.233);
-    text-align: center;
-    color: #003B4A;
-    width: 240px;
-    height: 45px;
-    margin: 15 px;
-}
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "videos videos videos videos videos videos" "map map map map map map";
+  margin: 15px; }
 
 .videos {
-    grid-area: videos;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items:center;
-    margin: 25px;
-}
-.vtitulos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items:center;
-    border-color: rgba(214, 195, 164, 0.745);
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    background-color: rgba(214, 195, 164, 0.233);
-    text-align: center;
-    color: #003B4A;
-    width: 240px;
-    height: 45px;
-    margin: 15px;
-}
+  grid-area: videos;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px; }
 
 .map {
-    grid-area: map;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+  grid-area: map;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
 
-.imagenesa {
-    grid-area: imagenesa;
-}
-.footer{
-    width: 100%;
-    height: 5%;
-}
-/**tablet**/
-@media (max-width:768px) {
-    .main {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-            "titulo titulo titulo"
-            "objetivo objetivos"
-            "objetivos objetvios"
-            "objetivos objetvios"
-    }
-
-    .maina {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas:
-            "vtitulos vtitulos"
-            "videos videos"
-            "videos videos"
-            "videos videos"
-            "videos videos"
-            "mtitulos mtitulos"
-            "map map"
-            "map map"
-            "imagenesa imagenesa"
-            "imagenesa imagenesa"
-        ;
-    }
-}
+@media (max-width: 768px) {
+  .maini {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "titulo titulo titulo" "objetivo objetivos" "objetivos objetvios" "objetivos objetvios"; }
+  .maina {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "vtitulos vtitulos" "videos videos" "videos videos" "videos videos" "videos videos" "mtitulos mtitulos" "map map" "map map" "imagenesa imagenesa" "imagenesa imagenesa"; } }
 
 /**mobile**/
-@media (max-width:576px) {
-    .main {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:
-            "somos somos"
-            "somos somos"
-            "objetivo objetivos"
-            "objetivos objetvios"
-            "galeria galeria"
-            "galeria galeria"
-    }
-
-    .maina {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-areas:
-            "vtitulos vtitulos"
-            "videos videos"
-            "videos videos"
-            "videos videos"
-            "videos videos"
-            "mtitulos mtitulos"
-            "map map"
-            "map map"
-            "imagenesa imagenesa"
-            "imagenesa imagenesa"
-        ;
-    }
-}
+@media (max-width: 576px) {
+  .maini {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "somos somos" "somos somos" "objetivo objetivos" "objetivos objetvios" "galeria galeria" "galeria galeria"; }
+  .maina {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "vtitulos vtitulos" "videos videos" "videos videos" "videos videos" "videos videos" "mtitulos mtitulos" "map map" "map map" "imagenesa imagenesa" "imagenesa imagenesa"; } }

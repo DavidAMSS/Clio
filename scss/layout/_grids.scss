@@ -1,0 +1,54 @@
+.maini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "objetivos objetivos objetivos"
+        "objetivos objetivos objetivos"
+    ;
+    font-family: 'Raleway', sans-serif;
+}
+.objetivos {
+    grid-area: objetivos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.maina {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "videos videos videos videos videos videos"
+        "map map map map map map"
+    ;
+    margin: 15px;
+}
+.videos {
+    grid-area: videos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    margin: 25px;
+}
+.map {
+    grid-area: map;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
