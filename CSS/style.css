@@ -51,49 +51,19 @@
 
 .maini {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "titulo titulo titulo titulo" "objetivos objetivos objetivos" "objetivos objetivos objetivos";
+  grid-template-areas: "container container container" "container container container" "container container container" "texto texto texto";
   font-family: 'Raleway', sans-serif; }
 
-.objetivos {
-  grid-area: objetivos;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline; }
+.container {
+  grid-area: container; }
 
 .titulo {
-  grid-area: titulo;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
+  grid-area: titulo; }
 
-.maina {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "videos videos videos videos videos videos" "map map map map map map";
-  margin: 15px; }
-
-.videos {
-  grid-area: videos;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 25px; }
-
-.map {
-  grid-area: map;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around; }
+.texto {
+  grid-area: texto; }
 
 @media (max-width: 768px) {
   .maini {
@@ -117,3 +87,52 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "vtitulos vtitulos" "videos videos" "videos videos" "videos videos" "videos videos" "mtitulos mtitulos" "map map" "map map" "imagenesa imagenesa" "imagenesa imagenesa"; } }
+
+.card {
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif; }
+
+.container {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 15px; }
+
+.container .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.25s; }
+
+.container .card:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.container .card img {
+  width: 330px;
+  height: 220px; }
+
+.container .card h4 {
+  font-weight: 600; }
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300; }
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+  text-align: center;
+  text-justify: distribute;
+  width: 240px;
+  height: 60px; }
