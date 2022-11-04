@@ -19,3 +19,23 @@
 .texto{
     grid-area: texto;
 };
+.mainr{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "titulor titulor titulor titulor"
+    "imagenr imagenr textor textor"
+    "textor textor textor textor"
+    "textor textor textor textor"
+    ;
+};
+.titulor{
+    grid-area: titulor;
+};
+.imagenr{
+    grid-area: imagenr;
+};
+.textor{
+    grid-area: textor;
+};
