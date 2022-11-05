@@ -5,7 +5,59 @@
 @import "./components/cards";
 
 .imagenr{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     max-width: 750px;
     max-height: 300px;
     margin: 15px;
+    padding:3px;
+    background-color: rgba(245, 245, 245, 0.500);
+    border: 1px double #999999;
+    border-radius: 10px;
+};
+.textor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 -3px 3px rgba(255, 255, 255, 0.411);
+    padding: 3px;
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+};   
+.imagenre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+};
+.titulor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+};
+.titulo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
 };

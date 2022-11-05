@@ -59,4 +59,18 @@
             "imagenesa imagenesa"
         ;
     }
+    .imagenr{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 400px;
+        max-height: 150px;
+        margin: 15px;
+        padding:3px;
+        background-color: rgba(245, 245, 245, 0.500);
+        border: 1px double #999999;
+        border-radius: 10px;
+    };
 }

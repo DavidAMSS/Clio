@@ -8,7 +8,10 @@
   grid-template-columns: repeat(13fr);
   grid-template-areas: "titulo titulo titulo titulo titulo home home recursos recursos recomendados recomendados alumnos alumnos";
   background-color: rgba(214, 195, 164, 0.747);
-  color: #003B4A; }
+  color: #003B4A;
+  border: 1px rgba(214, 195, 164, 0.85);
+  border-radius: 0px 0px 10px 10px;
+  font-family: 'Raleway', sans-serif; }
 
 .titulonav {
   grid-area: titulo;
@@ -53,7 +56,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "container container container" "container container container" "container container container" "texto texto texto";
+  grid-template-areas: "titulo titulo titulo titulo" "container container container" "container container container" "texto texto texto";
   font-family: 'Raleway', sans-serif; }
 
 .container {
@@ -69,13 +72,13 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "titulor titulor titulor titulor" "imagenr imagenr textor textor" "textor textor textor textor" "textor textor textor textor"; }
+  grid-template-areas: "titulor titulor titulor titulor" "imagenre imagenre imagenre imagenre" "textor textor textor textor" "textor textor textor textor"; }
 
 .titulor {
   grid-area: titulor; }
 
-.imagenr {
-  grid-area: imagenr; }
+.imagenre {
+  grid-area: imagenre; }
 
 .textor {
   grid-area: textor; }
@@ -101,7 +104,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "vtitulos vtitulos" "videos videos" "videos videos" "videos videos" "videos videos" "mtitulos mtitulos" "map map" "map map" "imagenesa imagenesa" "imagenesa imagenesa"; } }
+    grid-template-areas: "vtitulos vtitulos" "videos videos" "videos videos" "videos videos" "videos videos" "mtitulos mtitulos" "map map" "map map" "imagenesa imagenesa" "imagenesa imagenesa"; }
+  .imagenr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 400px;
+    max-height: 150px;
+    margin: 15px;
+    padding: 3px;
+    background-color: rgba(245, 245, 245, 0.5);
+    border: 1px double #999999;
+    border-radius: 10px; } }
 
 .card {
   width: 100%;
@@ -116,7 +132,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 15px; }
+  margin: 15px;
+  font-family: 'Raleway', sans-serif; }
 
 .container .card {
   width: 330px;
@@ -153,6 +170,58 @@
   height: 60px; }
 
 .imagenr {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   max-width: 750px;
   max-height: 300px;
-  margin: 15px; }
+  margin: 15px;
+  padding: 3px;
+  background-color: rgba(245, 245, 245, 0.5);
+  border: 1px double #999999;
+  border-radius: 10px; }
+
+.textor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 -3px 3px rgba(255, 255, 255, 0.411);
+  padding: 3px;
+  margin: 15px;
+  font-family: 'Raleway', sans-serif; }
+
+.imagenre {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.titulor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  font-family: 'Raleway', sans-serif; }
+
+.titulo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  font-family: 'Raleway', sans-serif; }
