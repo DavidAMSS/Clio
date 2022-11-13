@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Index */
+.main1 {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "titulo1 titulo1" "obj obj" "obj obj" "obj obj"; }
+
+/* Alumnos */
+.main2 {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 4fr;
+  grid-template-areas: "titulo2 titulo2" "vid vid" "vid vid" "vid vid"; }
+
+/* Profesionales */
+.main3 {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 6fr;
+  grid-template-areas: "titulo3 titulo3" "busc busc" "busc busc" "subt1 subt1" "pag pag" "pag pag"; }
+
+/* Utilidades */
+.main4 {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 6fr;
+  grid-template-areas: "titulo4 titulo4" "info info" "info info" "subt2 subt2" "ref ref" "ref ref"; }
+
+/* Contacto*/
+.main5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "titulo5 titulo5" "cont cont"; }
+
+.titulo {
+  grid-area: titulo1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.obj {
+  grid-area: obj;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.titulo2 {
+  grid-area: titulo2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.vid {
+  grid-area: vid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.titulo3 {
+  grid-area: titulo3;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.busc {
+  grid-area: busc;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.subt1 {
+  grid-area: subt1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.titulo4 {
+  grid-area: titulo4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.subt2 {
+  grid-area: subt2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.ref {
+  grid-area: ref;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.titulo5 {
+  grid-area: titulo5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.cont {
+  grid-area: cont;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }

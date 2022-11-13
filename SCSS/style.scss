@@ -1,0 +1,80 @@
+@import "./base/_reset.scss";
+@import "./layout/_grid.scss";
+.titulo{
+    grid-area: titulo1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.obj{
+    grid-area: obj;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.titulo2{
+    grid-area: titulo2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.vid{
+    grid-area: vid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.titulo3{
+    grid-area: titulo3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.busc{
+    grid-area: busc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.subt1{
+    grid-area: subt1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.titulo4{
+    grid-area: titulo4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    };
+.info{
+    grid-area: info;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.subt2{
+    grid-area: subt2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.ref{
+    grid-area: ref;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};
+.titulo5{
+    grid-area: titulo5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.cont{
+    grid-area: cont;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+};

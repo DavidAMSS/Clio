@@ -1,0 +1,62 @@
+/* Index */
+.main1{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "titulo1 titulo1"
+    "obj obj"
+    "obj obj"
+    "obj obj"
+    ;
+};
+/* Alumnos */
+.main2{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+    "titulo2 titulo2"
+    "vid vid"
+    "vid vid"
+    "vid vid"
+    ;
+}
+/* Profesionales */
+.main3{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 6fr;
+    grid-template-areas: 
+    "titulo3 titulo3"
+    "busc busc"
+    "busc busc"
+    "subt1 subt1"
+    "pag pag"
+    "pag pag"
+    ;
+};
+/* Utilidades */
+.main4{
+    display: grid;
+    grid-template-columns: 2fr ;
+    grid-template-rows: 6fr;
+    grid-template-areas: 
+    "titulo4 titulo4"
+    "info info"
+    "info info"
+    "subt2 subt2"
+    "ref ref"
+    "ref ref"
+    ;
+};
+/* Contacto*/
+.main5{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    "titulo5 titulo5"
+    "cont cont"
+    ;
+};
