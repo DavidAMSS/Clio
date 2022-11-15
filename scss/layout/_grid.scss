@@ -1,25 +1,25 @@
 /* Index */
 .main1{
     display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 3fr;
+    grid-template-rows: 75px repeat(3, 1fr);
     grid-template-areas: 
-    "titulo1 titulo1"
-    "obj obj"
-    "obj obj"
-    "obj obj"
+    "titulo1 titulo1 titulo1"
+    "obj obj obj"
+    "obj obj obj"
+    "obj obj obj"
     ;
 };
 /* Alumnos */
 .main2{
     display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 4fr;
+    grid-template-columns: 3fr;
+    grid-template-rows: 75px 3fr;
     grid-template-areas: 
     "titulo2 titulo2"
-    "vid vid"
-    "vid vid"
-    "vid vid"
+    "vid vid titulo2"
+    "vid vid vid"
+    "vid vid vid"
     ;
 }
 /* Profesionales */

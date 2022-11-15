@@ -7,76 +7,72 @@
     <title>Clio - Tu biblioteca digital</title>
     <link rel="icon" type="image/jpg" href="./resources/favicon-32x32.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Roboto:wght@100;400&family=Secular+One&family=Varela+Round&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="./css/hover.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav class="navbar bg-light fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Clio - Tu biblioteca digital</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">¿Qué estas buscando?</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Recursos
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="./pages/Alumnos.html">Alumnos</a></li>
-                      <li><a class="dropdown-item" href="./pages/Profesionales.html">Profesionales</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="./pages/Utilidades.html">Utilidades</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
+    <div class="navbar">
+      <h1 class="h1">Clio</h1>
+      <div class="menu">
+      <ul class="menu">
+        <li>
+          <a href="./pages/Utilidades.html">Utilidades</a> 
+        <li>
+          <a href="./pages/Alumnos.html">Alumnos</a></li>
+          <li>
+            <a href="./pages/Profesionales.html">Profesionales</a></li>
+      </ul>
+      </div>
+    </div>
   </header>
-    <main>
-        <section>
+    <main class="main1">
+        <div class="titulo1">
           <h1>Nuestros objetivos</h1>
-          <img src="./resources/Logo clio.png">
-        </section>
-        <section>
-        <div>
+        </div>
+        <section class="obj">
+        <div class="card">
           <h4>Ayudarte en tu estudio</h4>
           <img src="https://images.pexels.com/photos/261909/pexels-photo-261909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
           <p>
              Sabemos que iniciarse en el estudio de la historia es dificil. Por esto queremos acompañarte y facilitarte este proceso, para que no sea un sufrimiento. 
           </p>
         </div>
-        <div>
+        <div class="card">
           <h4>Brindarte herramientas</h4>
           <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
           <p>
             Estudiar o concer la historia solo de libros es imposible. Por eso te ofrecemos alternativas para que puedas concer más y que se adapten a tus necesidades.
           </p>
         </div>
-        <div>
+
+        <div class="card">
+          <h4>Ahorrarte tiempo</h4>
+          <img src="https://images.pexels.com/photos/552774/pexels-photo-552774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <p>
+            Queremos darte herramientas que te ayuden a optimizar tu tiempo de estudio.
+          </p>
+        </div>
+        <div class="card">
           <h4>Que difrutes la historia</h4>
           <img src="https://images.pexels.com/photos/4397890/pexels-photo-4397890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <p>
+            La historia puede ser tan divertida como cualquier otra disciplina, el problema es que te la han enseñado mal. La historia no tiene que ser una simple repetición de fechas, es poder conocer nuestro pasado para entender nuestro futuro.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Que difrutes la historia</h4>
+          <img src="https://images.pexels.com/photos/4397890/pexels-photo-4397890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <p>
+            La historia puede ser tan divertida como cualquier otra disciplina, el problema es que te la han enseñado mal. La historia no tiene que ser una simple repetición de fechas, es poder conocer nuestro pasado para entender nuestro futuro.
+          </p>
+        </div>
+                <div class="card">
+          <h4>Que difrutes la historia</h4>
+          <img src="https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
           <p>
             La historia puede ser tan divertida como cualquier otra disciplina, el problema es que te la han enseñado mal. La historia no tiene que ser una simple repetición de fechas, es poder conocer nuestro pasado para entender nuestro futuro.
           </p>
@@ -85,9 +81,6 @@
   </main>
   </body>
 <footer>
-  <p>Uso educativo</p>
-  <p>No comercial</p>
+  <div class="contacto"><a href="./pages/Contacto.html">Contacto</a></div>
 </footer>
-<!--script-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>

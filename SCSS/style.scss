@@ -1,16 +1,28 @@
 @import "./base/_reset.scss";
 @import "./layout/_grid.scss";
-.titulo{
-    grid-area: titulo1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+@import "./variables/variables";
+@import "./Components/navbard";
+@import "./Components/footer";
+@import "./Components/cards";
+.header{
+    margin-bottom: 5px;
 };
 .obj{
     grid-area: obj;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+};
+.titulo1{
+    grid-area: titulo1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 };
 .titulo2{
     grid-area: titulo2;

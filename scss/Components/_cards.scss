@@ -1,5 +1,151 @@
 .card{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 555px;
+    max-height: 1600px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(248, 237, 227, 0.500);
+    border: 2px;
+    border-color: $acentos;
+    border-style: solid;
+    box-shadow: 0px 10px 5px 0px rgba(181,181,181,0.33);
+        img{
+            max-width: 385px;
+            max-height: 650px;
+            border: 1px;
+            border-radius: 10px;
+            border-color: $acentos;
+            border-style: hidden;
+            padding: 5px;
+        }
+        h4{
+          text-align: center;
+          font-family: 'Varela Round', sans-serif;
+          font-weight: 500; 
+        }
+        p{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
+          margin: 10px;
+        };
+  .card:hover{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  };
+};
+.card2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 550px;
+  max-height: 1600px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(248, 237, 227, 0.500);
+  border: 2px;
+  border-color: $acentos;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px 0px rgba(181,181,181,0.33);
+      img{
+          max-width: 480px;
+          max-height: 175px;
+          border: 2px;
+          border-radius: 10px;
+          border-color: $acentos;
+          border-style: hidden;
+          padding: 2px;
+          margin: 15px;
+      }
+      h4{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 500; 
+      }
+      p{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        margin: 10px;   
+      };
+      a{
+        margin: 5px;
+      };
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 555px;
+    max-height: 1600px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(248, 237, 227, 0.500);
+    border: 2px;
+    border-color: $acentos;
+    border-style: solid;
+    box-shadow: 0px 10px 5px 0px rgba(181,181,181,0.33);
+        img{
+            max-width: 475px;
+            max-height: 325px;
+            border: 1px;
+            border-radius: 10px;
+            border-color: $acentos;
+            border-style: hidden;
+            padding: 5px;
+        }
+        h4{
+          text-align: center;
+          font-family: 'Varela Round', sans-serif;
+          font-weight: 500; 
+        }
+        p{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
+          margin: 10px;
+        };
+        a{
+          color: rgb(51, 51, 51);
+          margin: 5px;
+          text-decoration: none;
+        };
+  .card:hover{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  };
+};
+
+.card:hover{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 };
