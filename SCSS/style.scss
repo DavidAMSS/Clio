@@ -4,9 +4,11 @@
 @import "./Components/navbard";
 @import "./Components/footer";
 @import "./Components/cards";
+@import "./Components/forms";
 .header{
     margin-bottom: 5px;
 };
+/* Index */
 .obj{
     grid-area: obj;
     display: flex;
@@ -24,11 +26,14 @@
     justify-content: center;
     align-items: center;
 };
+/* Alumnos */
 .titulo2{
     grid-area: titulo2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 };
 .vid{
     grid-area: vid;
@@ -36,48 +41,98 @@
     flex-wrap: wrap;
     flex-direction: row;
 };
+/* Profesionales */
 .titulo3{
     grid-area: titulo3;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 };
 .busc{
     grid-area: busc;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 };
 .subt1{
     grid-area: subt1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 };
+.pag{
+    grid-area: pag;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+};
+/* Utilidades */
 .titulo4{
     grid-area: titulo4;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    h1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     };
+};
 .info{
     grid-area: info;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around ;
+        font-family: 'Roboto', sans-serif;
+        border: 2px;
+        border-radius: 10px;
+        border-color: $acentos;
+        border-style: solid;
+        width: 275px;
+        height: 185px;
+        padding: 5px;
+        li{
+            list-style-image:url(../resources/puntos.png);
+        }; 
+    };
 };
 .subt2{
     grid-area: subt2;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
 };
 .ref{
     grid-area: ref;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 };
+/* Contacto*/
 .titulo5{
     grid-area: titulo5;
     display: flex;
@@ -88,5 +143,11 @@
     grid-area: cont;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+};
+/* General */
+.varela{
+    font-family: 'Varela Round', sans-serif;
 };

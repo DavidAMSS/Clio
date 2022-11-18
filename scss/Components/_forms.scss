@@ -1,0 +1,81 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-radius: 10px;
+    border-color: $principal;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 10px rgba(219,219,219,1);
+    margin: 15px;
+    padding: 5px;
+    width: 35%;
+    height: 35%;
+    span{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    };
+    input{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 5px;
+        padding: 5px;
+        border: 2px;
+        border-radius: 10px;
+        border-color: $acentos;
+        border-style: solid;
+        width: 550px;
+        max-width: 55%;
+        max-height: 55%;
+    };
+    textarea{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 5px;
+        padding: 5px;
+        border: 2px;
+        border-radius: 10px;
+        border-color: $acentos;
+        border-style: solid;
+        max-width: 55%;
+        max-height: 55%;  
+    };
+    button{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 5px;
+        padding: 5px;
+        border: 2px;
+        border-radius: 10px;
+        border-color: $acentos;
+        border-style: solid;
+        max-width: 55%;
+        max-height: 55%;
+    };
+};
+@media (max-width: 350px ) {
+    .form{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       align-items: center;
+    };
+   };

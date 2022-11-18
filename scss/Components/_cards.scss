@@ -12,14 +12,14 @@
     border: 2px;
     border-color: $acentos;
     border-style: solid;
-    box-shadow: 0px 10px 5px 0px rgba(181,181,181,0.33);
+    box-shadow: 0px 10px 5px 15px rgba(181,181,181,0.33);
         img{
-            max-width: 385px;
-            max-height: 650px;
+            max-width: 100%;
+            max-height: 25%;
             border: 1px;
             border-radius: 10px;
             border-color: $acentos;
-            border-style: hidden;
+            border-style: solid;
             padding: 5px;
         }
         h4{
@@ -37,42 +37,149 @@
 .card2{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    max-width: 555px;
-    max-height: 1600px;
+    max-width: 350px;
+    max-height: 350px;
     margin: 5px;
-    padding: 5px;
-    background-color: rgba(248, 237, 227, 0.500);
+    background-color: $principal;
     border: 2px;
     border-color: $acentos;
     border-style: solid;
     border-radius: 10px;
     box-shadow: 0px 10px 5px 0px rgba(181,181,181,0.33);
         img{
-            max-width: 475px;
-            max-height: 325px;
-            border: 1px;
+            max-width: 85%;
+            max-height: 55%;
+            border: 2px;
             border-radius: 10px;
             border-color: $acentos;
-            border-style: hidden;
-            padding: 5px;
+            border-style: solid;
+            padding: 10px;
+            margin: 10px;
         }
         h4{
           text-align: center;
           font-family: 'Varela Round', sans-serif;
-          font-weight: 500; 
+          font-weight: 500;
+          padding: 10px; 
         }
         p{
           text-align: center;
           font-family: 'Roboto', sans-serif;
           font-weight: 100;
           margin: 10px;
+          padding: 5px;
+          border: 2px;
+          border-radius: 10px;
+          border-style: solid;
+          border-color: $acentos; 
+          color:  black;
+          background-color: white;
+          box-shadow: 3px 4px 20px -2px rgba(173,173,173,1);
         };
         a{
-          color: rgb(51, 51, 51);
+          color: white;
           margin: 5px;
           text-decoration: none;
+          background-color: $acentos;
+          border: 5px;
+          border-radius: 10px;
+          border-style: solid;
+          border-color: $footer;
         };
+};
+.card3{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 555px;
+  max-height: 1600px;
+  margin: 15px;
+  background-color: rgba(248, 237, 227, 0.500);
+  border: 2px;
+  border-color: $acentos;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px 15px rgba(181,181,181,0.33);
+      img{
+          max-width: 95%;
+          max-height: 95%;
+          border: 1px;
+          border-radius: 10px;
+          border-color: $acentos;
+          border-style: solid;
+          margin: 5px;
+      }
+      h4{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 500; 
+        padding: 5px;
+      }
+      p{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        margin: 10px;
+      };
+};
+.card4{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 550px;
+  max-height: 550px;
+  margin: 5px;
+  background-color: $principal;
+  border: 2px;
+  border-color: $acentos;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px 0px rgba(181,181,181,0.33);
+      img{
+          max-width: 75%;
+          max-height: 35%;
+          border: 2px;
+          border-radius: 10px;
+          border-color: $acentos;
+          border-style: solid;
+          padding: 10px;
+          margin: 10px;
+      }
+      h4{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 500;
+        padding: 10px; 
+      }
+      p{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        margin: 10px;
+        padding: 5px;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: $acentos; 
+        color:  black;
+        background-color: white;
+        box-shadow: 3px 4px 20px -2px rgba(173,173,173,1);
+      };
+      a{
+        color: white;
+        margin: 5px;
+        text-decoration: none;
+        background-color: $acentos;
+        border: 5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: $footer;
+      };
 };

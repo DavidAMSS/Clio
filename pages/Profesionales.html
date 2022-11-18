@@ -1,72 +1,97 @@
-div<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clio - Tu biblioteca digital</title>
-        <link rel="icon" type="image/jpg" href="../resources/favicon-32x32.png"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link href="../css/hover.css" rel="stylesheet">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clio - Tu biblioteca digital</title>
+  <link rel="icon" type="image/jpg" href="../resources/favicon-32x32.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Roboto:wght@100;400&family=Secular+One&family=Varela+Round&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="../css/hover.css" rel="stylesheet">
+</head>
+
 <body>
   <header>
     <div class="navbar">
       <h1 class="h1">Clio</h1>
       <div class="menu">
-      <ul class="menu">
-        <li>
-          <a href="../pages/Utilidades.html">Utilidades</a> 
-        <li>
-          <a href="../pages/Alumnos.html">Alumnos</a></li>
+        <ul class="menu">
           <li>
-            <a href="../pages/Profesionales.html">Profesionales</a></li>
-      </ul>
+            <img src="../resources/home.svg" alt="">
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <img src="../resources/tool.svg" alt="">
+            <a href="../pages/Utilidades.html">Utilidades</a>
+          <li>
+            <img src="../resources/video.svg" alt="">
+            <a href="../pages/Alumnos.html">Alumnos</a>
+          </li>
+          <li>
+            <img src="../resources/paperclip.svg" alt="">
+            <a href="../pages/Profesionales.html">Profesionales</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
-<main>
-      <h2>Principales buscadores académicos</h2>
-      <div>
+  <main class="main3">
+    <div class="titulo3">
+      <h1 class="varela">Principales buscadores académicos</h1>
+    </div>
+    <section class="busc">
+      <div class="card4">
         <img src="https://blog.personal.com.py/wp-content/uploads/2022/03/google-academico-scholar-espanol.jpg" alt="">
         <h4>Google Académico</h4>
-        <p>Como su nombre indca es el buscador de revistas y libros de Google. Es el más simple de utilizar de todos y no depende de un repositorio propio.</p>
-        <a href="https://scholar.google.es/schhp?hl=es"> Visitar</a>
+        <p>Como su nombre indca es el buscador de revistas y libros de Google. Es el más simple de utilizar de todos y
+          no depende de un repositorio propio.</p>
+        <a class="hvr-underline-from-center" href="https://scholar.google.es/schhp?hl=es"> Visitar</a>
       </div>
-      <div>
-        <img src="https://scielo.org/static/images/logo-scielo-portal-no-label.svg" alt="">
+      <div class="card4">
+        <img src="https://pbs.twimg.com/media/Fd2Et5KWQAA4lB5.jpg" alt="">
         <h4>SciELO - Scientific Electronic Library Online</h4>
-        <p>Es el mayor repositorio digital de revistas, tesis y artículos del internet. Si conoces otros idiomas, sera el lugar ideal para encontrar lo que estes buscando</p>
-        <a href="https://scielo.org/es/"> Visitar</a>
+        <p>Es el mayor repositorio digital de revistas, tesis y artículos del internet. Si conoces otros idiomas, sera
+          el lugar ideal para encontrar lo que estes buscando</p>
+        <a class="hvr-underline-from-center" href="https://scielo.org/es/"> Visitar</a>
       </div>
-      <div>
-        <img src="https://a.academia-assets.com/assets/academia-logo-redesign-2015-45ae31566d1421084023fae986d81b06469982455d4be698a5226a904e7836a9.svg" alt="">
+      <div class="card4">
+        <img
+          src="https://a.academia-assets.com/assets/academia-logo-redesign-2015-45ae31566d1421084023fae986d81b06469982455d4be698a5226a904e7836a9.svg"
+          alt="">
         <h4>Academia edu</h4>
-        <p>El sitio con mayor prestigio de los tres. Tiene gran cantidad de articulos gratis pero deberas pagar para acceder a todos.</p>
-        <a href="https://www.academia.edu/"> Visitar</a>
-      </div> 
-    </section>
-    <section>
-      <h2>¿Quieres leer algo por simple diversión?</h2>
-      <div>
-        <img src="https://i0.wp.com/www.labrujulaverde.com/wp-content/uploads/2015/01/lbvbanner.png?fit=829%2C450&ssl=1" alt="">
-        <h4>La Brújula Verde</h4>
-        <p>Puede leer sobre temas poco comunes de historio o geografía. Tiene una redacción simple pero sin perder calidad.</p>
-        <a href="https://www.labrujulaverde.com/"> Leer</a>
+        <p>El sitio con mayor prestigio de los tres. Tiene gran cantidad de articulos gratis pero deberas pagar para
+          acceder a todos.</p>
+        <a class="hvr-underline-from-center" href="https://www.academia.edu/"> Visitar</a>
       </div>
-      <div>
+    </section>
+    <div>
+      <h2 class="subt1">¿Quieres leer algo por simple diversión?</h2>
+    </div>
+    <section class="pag">
+      <div class="card4">
+        <img src="https://i0.wp.com/www.labrujulaverde.com/wp-content/uploads/2015/01/lbvbanner.png?fit=829%2C450&ssl=1"
+          alt="">
+        <h4>La Brújula Verde</h4>
+        <p>Puede leer sobre temas poco comunes de historio o geografía. Tiene una redacción simple pero sin perder
+          calidad.</p>
+        <a class="hvr-underline-from-center" href="https://www.labrujulaverde.com/"> Leer</a>
+      </div>
+      <div class="card4">
         <img src="https://estaticos.muyhistoria.es/images/categories/default_cuadrada.jpg" alt="">
         <h4>Academia edu</h4>
         <p>Revista histórica del grupo Muy Interesante</p>
-        <a href="https://www.muyhistoria.es/"> Leer</a>
+        <a class="hvr-underline-from-center" href="https://www.muyhistoria.es/"> Leer</a>
       </div>
     </section>
-</main>    
+  </main>
 </body>
 <footer>
-    <p>Uso educativo</p>
-    <p>No comercial</p>
-  </footer>
-<!--script-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <div class="contacto"><a href="../pages/Contacto.html">Contacto</a></div>
+</footer>
 </html>
